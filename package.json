@@ -1,0 +1,28 @@
+{
+  "name": "wrld-tours",
+  "version": "0.0.1",
+  "description": "A proof-of-concept tour marketplace using WRLD",
+  "main": "server",
+  "scripts": {
+    "start": "node server",
+    "build": "mkdir -p dist && rm -rf dist/* && npm run build-client",
+    "build-client": "cp client/index.css dist && browserify client/index.js -o dist/index.js",
+    "watch": "npm run build && nodemon server",
+    "test": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.3",
+    "express-handlebars": "3.0.0",
+    "request": "2.85.0",
+    "wrld.js": "0.1.1632"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.3",
+    "browserify": "16.2.0",
+    "eslint": "4.19.1",
+    "nodemon": "^1.17.3"
+  }
+}

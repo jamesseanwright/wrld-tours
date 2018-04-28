@@ -8,7 +8,7 @@ class TripItemView extends View {
 
         return `
             <li>
-                <a href=trips/${id}>${name}</a>
+                <a href"/trips/${id}">${name}</a>
             </li>
         `;
     }

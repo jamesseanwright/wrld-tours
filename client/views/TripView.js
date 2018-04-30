@@ -9,10 +9,6 @@ class TripView extends View {
 
     }
 
-    constructor(props) {
-        super(props);
-    }
-
     async onNavigatedTo() {
         const { endpoints } = this.props;
 

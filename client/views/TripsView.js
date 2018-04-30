@@ -5,10 +5,6 @@ const TripItemView = require('./TripItemView');
 const View = require('./View');
 
 class TripsView extends View {
-    constructor(props) {
-        super(props);
-    }
-
     async onNavigatedTo() {
         const { endpoints } = this.props;
         this.trips = await callEndpoint(endpoints.trips);

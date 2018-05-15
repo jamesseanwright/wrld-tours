@@ -26,12 +26,6 @@ app.use('/trips', tripsRouter);
 app.use('/api', apiRouter);
 app.get('/', (req, res) => res.redirect(301, '/trips'));
 
-
-// Stub API endpoint
-app.post('/api/purchase', (req, res) => {
-    res.json({ purchaseSuccessful: true });
-});
-
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}...`);
 });
